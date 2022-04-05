@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ccbffd0669c84ff5ae876372a012fec7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ccbffd0669c84ff5ae876372a012fec7" ></div>
+        
+</body>
+<script>    
+    
+            var map_ccbffd0669c84ff5ae876372a012fec7 = L.map(
+                "map_ccbffd0669c84ff5ae876372a012fec7",
+                {
+                    center: [1.4504311, 103.8059588],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_67551ed125ea40a3af9d70b5c8197a7b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var marker_9dc5057628f84598ab9833c3c145e794 = L.marker(
+                [1.4504311, 103.8059588],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_0a672ede693a41e192c79fa104897f88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_9dc5057628f84598ab9833c3c145e794.setIcon(icon_0a672ede693a41e192c79fa104897f88);
+        
+    
+            marker_9dc5057628f84598ab9833c3c145e794.bindTooltip(
+                `<div>
+                     Depot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6f39826aaf04213aa915dab4f209321 = L.marker(
+                [1.444306, 103.829679],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_e622ab4268974ca288b7ebe6195a7bdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e6f39826aaf04213aa915dab4f209321.setIcon(icon_e622ab4268974ca288b7ebe6195a7bdf);
+        
+    
+            marker_e6f39826aaf04213aa915dab4f209321.bindTooltip(
+                `<div>
+                     118a canberra cres, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94b9e856092a4dfbb4c4244607ba462b = L.marker(
+                [1.374074, 103.838634],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_f59503cf99ca455ab98670405d1c55b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_94b9e856092a4dfbb4c4244607ba462b.setIcon(icon_f59503cf99ca455ab98670405d1c55b6);
+        
+    
+            marker_94b9e856092a4dfbb4c4244607ba462b.bindTooltip(
+                `<div>
+                     162 ang mo kio avenue 4, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6e03a656ba54e38a77519c92e006816 = L.marker(
+                [1.386346, 103.873502],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_b18539001c6141e2bd34ffa28e75837f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f6e03a656ba54e38a77519c92e006816.setIcon(icon_b18539001c6141e2bd34ffa28e75837f);
+        
+    
+            marker_f6e03a656ba54e38a77519c92e006816.bindTooltip(
+                `<div>
+                     2 jalan selaseh, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c4d5c4045d74327ae0c691e2ed3f836 = L.marker(
+                [1.358876, 103.887531],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_d8b17f686f1b40bfb2ff928507ab6c62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1c4d5c4045d74327ae0c691e2ed3f836.setIcon(icon_d8b17f686f1b40bfb2ff928507ab6c62);
+        
+    
+            marker_1c4d5c4045d74327ae0c691e2ed3f836.bindTooltip(
+                `<div>
+                     210 hougang street 21, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2360faf1921f4996bbb21f9bfc0d96b7 = L.marker(
+                [1.339858, 103.854101],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_8027249c770f41d090fb4c432c7b4868 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_2360faf1921f4996bbb21f9bfc0d96b7.setIcon(icon_8027249c770f41d090fb4c432c7b4868);
+        
+    
+            marker_2360faf1921f4996bbb21f9bfc0d96b7.bindTooltip(
+                `<div>
+                     210 toa payoh lorong 8, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35184fc825104e5fa134ab2d639fdc34 = L.marker(
+                [1.367009, 103.838798],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_35acbfab3fcf45f9bc1b6450e5a85c93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_35184fc825104e5fa134ab2d639fdc34.setIcon(icon_35acbfab3fcf45f9bc1b6450e5a85c93);
+        
+    
+            marker_35184fc825104e5fa134ab2d639fdc34.bindTooltip(
+                `<div>
+                     226d ang mo kio avenue 1, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b9ed994a9264df19ae7d5df748903e5 = L.marker(
+                [1.33587, 103.856812],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_b46c5565ca4144bab025fba237ca9212 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5b9ed994a9264df19ae7d5df748903e5.setIcon(icon_b46c5565ca4144bab025fba237ca9212);
+        
+    
+            marker_5b9ed994a9264df19ae7d5df748903e5.bindTooltip(
+                `<div>
+                     22a lorong 7 toa payoh, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2f1bcf9c928406c916ae5ea40534925 = L.marker(
+                [1.391806, 103.878897],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_aa11234835454c00ad448877e9cea975 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f2f1bcf9c928406c916ae5ea40534925.setIcon(icon_aa11234835454c00ad448877e9cea975);
+        
+    
+            marker_f2f1bcf9c928406c916ae5ea40534925.bindTooltip(
+                `<div>
+                     266 sengkang west avenue, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec58281c757546d081928892643fde41 = L.marker(
+                [1.35876, 103.844587],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_e4186f63d6e1440a83cf001eda324049 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ec58281c757546d081928892643fde41.setIcon(icon_e4186f63d6e1440a83cf001eda324049);
+        
+    
+            marker_ec58281c757546d081928892643fde41.bindTooltip(
+                `<div>
+                     284 bishan street 22, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf96352064cd4631985db9f9af3f0d74 = L.marker(
+                [1.319109, 103.86346],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_d7f1d9cfe7474770a31c76626b19bcdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_cf96352064cd4631985db9f9af3f0d74.setIcon(icon_d7f1d9cfe7474770a31c76626b19bcdf);
+        
+    
+            marker_cf96352064cd4631985db9f9af3f0d74.bindTooltip(
+                `<div>
+                     29 bendemeer road, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d55c3338821f43d18f1aa4145e86f6e1 = L.marker(
+                [1.447667, 103.816352],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_06c3a460bc964c6cafd2ab849cbe3f2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d55c3338821f43d18f1aa4145e86f6e1.setIcon(icon_06c3a460bc964c6cafd2ab849cbe3f2b);
+        
+    
+            marker_d55c3338821f43d18f1aa4145e86f6e1.bindTooltip(
+                `<div>
+                     334 sembawang close, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b379fccf59e40be9b0fffae938a04be = L.marker(
+                [1.36521, 103.848922],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_339392d0ce6e447495926b024e3b6609 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6b379fccf59e40be9b0fffae938a04be.setIcon(icon_339392d0ce6e447495926b024e3b6609);
+        
+    
+            marker_6b379fccf59e40be9b0fffae938a04be.bindTooltip(
+                `<div>
+                     339 ang mo kio ave 1, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e431ba6e5ac40f58d27d91e702a7c1d = L.marker(
+                [1.392774, 103.886931],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_435c1e8c9a0e4af8955f000995707dcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4e431ba6e5ac40f58d27d91e702a7c1d.setIcon(icon_435c1e8c9a0e4af8955f000995707dcc);
+        
+    
+            marker_4e431ba6e5ac40f58d27d91e702a7c1d.bindTooltip(
+                `<div>
+                     350a anchorvale rd, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_300cbb15c606454fb4013b3bb60787ee = L.marker(
+                [1.372428, 103.898933],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_e23cc93cbfb244a6b074cbef088067df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_300cbb15c606454fb4013b3bb60787ee.setIcon(icon_e23cc93cbfb244a6b074cbef088067df);
+        
+    
+            marker_300cbb15c606454fb4013b3bb60787ee.bindTooltip(
+                `<div>
+                     356 hougang avenue 7, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5397c2ffa2bf4a6681cad730d5a8fa47 = L.marker(
+                [1.359752, 103.866553],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_52bc24153ba74fc2a514e362a2b68ebc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5397c2ffa2bf4a6681cad730d5a8fa47.setIcon(icon_52bc24153ba74fc2a514e362a2b68ebc);
+        
+    
+            marker_5397c2ffa2bf4a6681cad730d5a8fa47.bindTooltip(
+                `<div>
+                     4 cardiff grove, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6cf6ceabe1b44a9a6d896c2dc44527c = L.marker(
+                [1.363232, 103.848498],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_91363b653def4ac08dc6d1e08b8d464b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b6cf6ceabe1b44a9a6d896c2dc44527c.setIcon(icon_91363b653def4ac08dc6d1e08b8d464b);
+        
+    
+            marker_b6cf6ceabe1b44a9a6d896c2dc44527c.bindTooltip(
+                `<div>
+                     453 ang mo kio avenue 1, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d84c647213e247c7903933685851a6be = L.marker(
+                [1.349014, 103.850059],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_fe380ae921ed4eb4952dc6e5dd0f06e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d84c647213e247c7903933685851a6be.setIcon(icon_fe380ae921ed4eb4952dc6e5dd0f06e6);
+        
+    
+            marker_d84c647213e247c7903933685851a6be.bindTooltip(
+                `<div>
+                     504 bishan street 13, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6cd09d2f5594ec2ae2927f02e76f5e1 = L.marker(
+                [1.375062, 103.850601],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_b6b0f9ada77a4d349e97460fe1cf64bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d6cd09d2f5594ec2ae2927f02e76f5e1.setIcon(icon_b6b0f9ada77a4d349e97460fe1cf64bd);
+        
+    
+            marker_d6cd09d2f5594ec2ae2927f02e76f5e1.bindTooltip(
+                `<div>
+                     505 ang mo kio street 53, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19f6bdd776064ae1b885f23b8b7585cd = L.marker(
+                [1.34928, 103.849798],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_6472422ae29e4bb196a7b71664a6f632 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_19f6bdd776064ae1b885f23b8b7585cd.setIcon(icon_6472422ae29e4bb196a7b71664a6f632);
+        
+    
+            marker_19f6bdd776064ae1b885f23b8b7585cd.bindTooltip(
+                `<div>
+                     511 bishan street 13, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4da1677ff0740d4b30cee958160693e = L.marker(
+                [1.372829, 103.855519],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_055b53ae59714df3adc9a8b61d906416 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d4da1677ff0740d4b30cee958160693e.setIcon(icon_055b53ae59714df3adc9a8b61d906416);
+        
+    
+            marker_d4da1677ff0740d4b30cee958160693e.bindTooltip(
+                `<div>
+                     530 ang mo kio avenue 10, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e07d32e832a7409faf982105f1767a0b = L.marker(
+                [1.379732, 103.840678],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_2c0d4cd6d8414927a49ef77474911131 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e07d32e832a7409faf982105f1767a0b.setIcon(icon_2c0d4cd6d8414927a49ef77474911131);
+        
+    
+            marker_e07d32e832a7409faf982105f1767a0b.bindTooltip(
+                `<div>
+                     631 ang mo kio avenue 4, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f126d6a9c65b4a5386238757dc082d98 = L.marker(
+                [1.370513, 103.881328],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_0238a256a92849ec826097bb1b2a04d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f126d6a9c65b4a5386238757dc082d98.setIcon(icon_0238a256a92849ec826097bb1b2a04d8);
+        
+    
+            marker_f126d6a9c65b4a5386238757dc082d98.bindTooltip(
+                `<div>
+                     631 hougang ave 8, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e409b189ae7e43189c472f1dde676bd9 = L.marker(
+                [1.380091, 103.841636],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_ecd32fab9d41441c8d7446ab18601470 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e409b189ae7e43189c472f1dde676bd9.setIcon(icon_ecd32fab9d41441c8d7446ab18601470);
+        
+    
+            marker_e409b189ae7e43189c472f1dde676bd9.bindTooltip(
+                `<div>
+                     632 ang mo kio ave 4, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2aace4e7a89442ff9c972ab9578f9e12 = L.marker(
+                [1.37332, 103.886161],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_f07b3a42ca464f1e986866cc316233b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_2aace4e7a89442ff9c972ab9578f9e12.setIcon(icon_f07b3a42ca464f1e986866cc316233b3);
+        
+    
+            marker_2aace4e7a89442ff9c972ab9578f9e12.bindTooltip(
+                `<div>
+                     682 hougang ave 8, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e90ad1684124925b1fc70369a0b9022 = L.marker(
+                [1.312879, 103.839551],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_48a53a834d764dd0a19e36236cd28454 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7e90ad1684124925b1fc70369a0b9022.setIcon(icon_48a53a834d764dd0a19e36236cd28454);
+        
+    
+            marker_7e90ad1684124925b1fc70369a0b9022.bindTooltip(
+                `<div>
+                     76 newton circus, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_495509bda51246d9a28088065b759f71 = L.marker(
+                [1.41642, 103.835172],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_517a7fd0b7aa42889bb19dbd8b9706da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_495509bda51246d9a28088065b759f71.setIcon(icon_517a7fd0b7aa42889bb19dbd8b9706da);
+        
+    
+            marker_495509bda51246d9a28088065b759f71.bindTooltip(
+                `<div>
+                     848 yishun street 81, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d0140fc00dc47299fdb6731aa077e14 = L.marker(
+                [1.322914, 103.854781],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_54983c7a3062440a82da868abbe84a41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_0d0140fc00dc47299fdb6731aa077e14.setIcon(icon_54983c7a3062440a82da868abbe84a41);
+        
+    
+            marker_0d0140fc00dc47299fdb6731aa077e14.bindTooltip(
+                `<div>
+                     90 whampoa drive, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_442540de1688485e844c7b00c287f2df = L.marker(
+                [1.323563, 103.854221],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_f5d4298d02c2488486caf3a4742fe07c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_442540de1688485e844c7b00c287f2df.setIcon(icon_f5d4298d02c2488486caf3a4742fe07c);
+        
+    
+            marker_442540de1688485e844c7b00c287f2df.bindTooltip(
+                `<div>
+                     91 whampoa drive, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecd353c2ff2140a9957e1f53e3d87154 = L.marker(
+                [1.376096, 103.880101],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_bb5da0e4232d4333afb8eb0765962014 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ecd353c2ff2140a9957e1f53e3d87154.setIcon(icon_bb5da0e4232d4333afb8eb0765962014);
+        
+    
+            marker_ecd353c2ff2140a9957e1f53e3d87154.bindTooltip(
+                `<div>
+                     923 hougang street 91, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59a940f15cf448a690ee848e51d7853e = L.marker(
+                [1.364254, 103.866211],
+                {}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+    
+            var icon_0a75601bff9d4699a6f41386263b3596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_59a940f15cf448a690ee848e51d7853e.setIcon(icon_0a75601bff9d4699a6f41386263b3596);
+        
+    
+            marker_59a940f15cf448a690ee848e51d7853e.bindTooltip(
+                `<div>
+                     chomp chomp food centre, singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_296a86c884f14c7796e66501aa8b348a = L.polyline(
+                [[1.44431, 103.82968], [1.44498, 103.83067], [1.44701, 103.82963], [1.44638, 103.82827], [1.4452, 103.82863], [1.44963, 103.82376], [1.44767, 103.81635], [1.44747, 103.812], [1.44555, 103.80823], [1.45036, 103.80281], [1.45122, 103.80436], [1.44962, 103.80527], [1.45011, 103.80614], [1.45097, 103.80428], [1.45007, 103.80313], [1.44629, 103.80711], [1.44127, 103.81766], [1.43551, 103.82324], [1.43546, 103.82593], [1.42799, 103.82689], [1.41356, 103.82331], [1.41014, 103.82982], [1.40365, 103.8275], [1.39816, 103.82911], [1.38934, 103.84103], [1.38771, 103.84173], [1.38402, 103.83762], [1.38232, 103.83871], [1.38319, 103.84008], [1.38045, 103.84145], [1.37973, 103.84068], [1.38009, 103.84164], [1.3831, 103.84007], [1.38227, 103.83874], [1.37887, 103.84005], [1.37407, 103.83863], [1.37509, 103.83856], [1.37405, 103.83748], [1.37021, 103.83681], [1.3697, 103.84083], [1.36735, 103.84038], [1.36701, 103.8388], [1.36801, 103.83787], [1.36616, 103.83708], [1.36323, 103.8485], [1.36589, 103.85009], [1.36521, 103.84892], [1.36728, 103.84487], [1.36571, 103.84371], [1.36099, 103.84208], [1.35876, 103.84459], [1.3537, 103.84848], [1.34859, 103.84739], [1.34803, 103.84983], [1.34901, 103.85006], [1.34928, 103.8498], [1.34648, 103.85243], [1.34559, 103.85591], [1.34356, 103.85641], [1.34324, 103.86073], [1.33098, 103.86286], [1.32813, 103.86898], [1.32409, 103.86756], [1.31911, 103.86346], [1.3139, 103.86028], [1.31964, 103.85309], [1.32254, 103.85271], [1.32291, 103.85478], [1.32521, 103.8537], [1.32356, 103.85422], [1.32451, 103.85311], [1.32348, 103.85219], [1.31941, 103.85285], [1.3182, 103.84402], [1.31909, 103.84297], [1.31288, 103.83955], [1.31293, 103.83868], [1.31098, 103.84409], [1.31625, 103.84691], [1.32032, 103.85467], [1.32726, 103.86153], [1.33554, 103.86211], [1.34263, 103.86019], [1.34293, 103.85408], [1.33986, 103.8541], [1.33984, 103.85653], [1.33789, 103.85591], [1.33416, 103.8581], [1.33587, 103.85681], [1.33849, 103.85522], [1.33773, 103.85376], [1.33915, 103.85221], [1.34149, 103.85345], [1.34395, 103.85292], [1.34429, 103.86044], [1.34909, 103.86036], [1.3544, 103.86539], [1.35975, 103.86655], [1.3581, 103.86634], [1.35825, 103.86529], [1.36586, 103.86642], [1.36425, 103.86621], [1.36234, 103.87337], [1.35897, 103.8741], [1.35406, 103.87807], [1.35821, 103.88291], [1.35718, 103.88401], [1.35888, 103.88753], [1.36065, 103.88838], [1.36111, 103.88607], [1.3669, 103.89202], [1.37207, 103.88587], [1.37332, 103.88616], [1.3746, 103.88509], [1.37497, 103.88007], [1.3761, 103.8801], [1.37722, 103.88465], [1.37207, 103.88602], [1.37036, 103.8846], [1.37051, 103.88133], [1.36943, 103.88015], [1.36688, 103.88988], [1.36163, 103.89403], [1.36688, 103.89899], [1.37163, 103.90089], [1.37243, 103.89893], [1.37274, 103.90015], [1.37632, 103.89613], [1.37921, 103.89672], [1.37996, 103.8928], [1.38399, 103.89015], [1.38643, 103.89108], [1.38966, 103.88529], [1.39277, 103.88693], [1.3945, 103.88712], [1.39576, 103.87952], [1.39181, 103.8789], [1.39062, 103.87563], [1.39102, 103.86935], [1.38547, 103.86845], [1.38529, 103.87154], [1.38702, 103.87184], [1.38635, 103.8735], [1.39059, 103.85891], [1.37658, 103.85894], [1.37574, 103.85479], [1.37283, 103.85552], [1.37575, 103.85464], [1.37614, 103.85099], [1.37506, 103.8506], [1.37613, 103.85067], [1.37668, 103.84766], [1.38021, 103.84604], [1.38065, 103.84419], [1.38985, 103.84054], [1.39907, 103.82832], [1.40704, 103.82811], [1.41826, 103.83373], [1.41723, 103.83583], [1.41642, 103.83517], [1.41713, 103.83578], [1.41818, 103.83368], [1.43142, 103.83527], [1.43632, 103.834], [1.4439, 103.82945], [1.44552, 103.83054], [1.44431, 103.82968]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 8}
+            ).addTo(map_ccbffd0669c84ff5ae876372a012fec7);
+        
+</script>

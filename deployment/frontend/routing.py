@@ -14,6 +14,7 @@ from sklearn.cluster import KMeans
 from geopy import distance
 
 
+
 def cluster(order_for_today, sample_daily_order, available_vehicles):
     # vehicle_list = []
     df_lat_lng = pd.read_csv('../../data/df_lat_lng.csv')
@@ -33,6 +34,7 @@ def route(order_for_today, sample_daily_order, available_vehicles):
     df_lat_lng = pd.read_csv('../../data/df_lat_lng.csv')
     sample_daily_order_list = []
     vehicle_list = []
+    color_to_csv_list = []
     
     for i in range(available_vehicles):
         sample_daily_order_list.append(daily_order_df[daily_order_df['cluster'] == i]['Name'].tolist())
@@ -142,13 +144,20 @@ def route(order_for_today, sample_daily_order, available_vehicles):
     
         # display route color
         route_dict['Color'] = color_list[color_num]
+        color_to_csv_list.append(color_list[color_num])
         
         vehicle_list.append(route_dict)
 
         cluster_number += 1
         color_num += 1
 
+    # saving folium html file
     m1.save(outfile= "../../routes/overall_route.html")
+    
+    # saving color to csv list for future use
+    color_to_csv_df = pd.DataFrame(color_to_csv_list)
+    color_to_csv_df.to_csv('../../data/color_to_csv_list.csv')
+    
     return sample_daily_order_list, vehicle_list
 
 def vehicle_cluster(vehicle_cluster, sample_daily_order_list):
